@@ -3,7 +3,7 @@ console.log("Hello", "World")
 let a =10;
 console.log(a);
 // Datatypes
-let x= "anish";
-let b = new String("anish");
+let x= "Larry";
+let b = new String("Larry");
 console.log(typeof b);
 console.log(b.toUpperCase);
