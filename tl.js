@@ -1,5 +1,5 @@
-let firstName= "Anis";
-let lastName= "Pandit";
+let firstName= "David";
+let lastName= "Malan";
 
 let fullName= firstName + " " + lastName;
 let fullName1= `${firstName} ${lastName}`;
