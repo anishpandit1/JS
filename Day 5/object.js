@@ -1,4 +1,4 @@
-/* let book = {
+let book = {
     name: "Practical Malware Analysis",
     author: "Michael Siloski",
     description: function(){
@@ -22,7 +22,7 @@ let book1 = new Object({
     },
 
 });
-book1.author="Anish Pandit"
+book1.author="Victor Joe"
 console.log(book1.description());
 book1.price="200 NOK";
 console.log(book1);
@@ -36,9 +36,8 @@ console.log(empty_obj);
 
 let c = Object.assign({},book1);
 console.log(c);
- */
-
-/* "use strict";
+ 
+ "use strict";
 const book1 = Object.freeze({
     name: "Stien på stien",
     author: "Mellisa Jones",
@@ -48,12 +47,11 @@ const book1 = Object.freeze({
     address: {
         city: "Kathmandu",
         country: "Nepal",
-        locale: "Gokarna"
+        locale: "NP"
     },
 });
-book1.name="Anish";
-console.log(book1.name); */
-
+book1.name="XYZ";
+console.log(book1.name);
 
 
 
