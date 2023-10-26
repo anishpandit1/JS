@@ -18,7 +18,7 @@ let book1 = new Object({
     address: {
         city: "Kathmandu",
         country: "Nepal",
-        locale: "Gokarna"
+        locale: "Ktm"
     },
 
 });
