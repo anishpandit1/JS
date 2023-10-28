@@ -1,4 +1,3 @@
-# JS
 Java Script 30 Days Self Training
 
 Day 1 Introduction
@@ -51,7 +50,7 @@ iii) DataTypes
 
 	Object:	 can be used for key, value pair,
 		let student= {
-				name= “Anish”,
+				name= “Harry”,
 				Age = “23”,
 				};
 		
@@ -149,7 +148,7 @@ let book1 = new Object({
 
 
 });
-book1.author="Anish Pandit"
+book1.author="Peter Griffin"
 console.log(book1.description());
 book1.price="200 NOK";
 console.log(book1);
@@ -181,7 +180,7 @@ const book1 = Object.freeze({
         locale: "Gokarna"
     },
 });
-book1.name="Anish";
+book1.name="Pete";
 console.log(book1.name);
 
 Cannot assign to read only property 'name' of object '#<Object>' 
@@ -557,3 +556,45 @@ console.log(s1);
 
 
 
+
+
+
+
+
+
+
+
+
+Day 8
+First Class Function
+ Apart from behaving like an object, another weird part with JS functions is that a function can be passed inside another function.
+Programming language that support the three things are known as first class function and they are:
+Passing function as argument of another function
+Returning function from another function
+Assigning function to a variable.
+
+Higher order function
+
+A higher order function is a function that takes one or more functions as arguments or returns a function as its results.
+
+Inbuilt HOFs in JS for Arrays
+forEach:
+The forEach() method executes a provided function once for each array element and returns undefined.
+map:
+The map() method maps/transforms the data into new ones. 
+filter:
+The filter() method filters the data in the array as per our condition
+reduce: 
+The reduce() method reduces our given array into a single value.
+sort():
+The sort() method sorts the data in the array as per our given condition, and returns the sorted array. If -ve a comes before b, if +ve a comes after b.
+
+Callback functions:
+A function that is passed as an argument to another function and is executed after the completion of the parent function. Callbacks are commonly used in asynchronous programming to handle tasks like responding to user input, making API requests, or reading files. SUch that, it ensures that the program is not blocked or freezed.
+Callbacks are not only used to just pass value but also can be used in order to get back the value.
+Main usage: Code Isolation, Asynchronous operation handle.
+
+
+HOF vs. Callback
+Callbacks are intended to be executed at a later time or under certain conditions whereas HOF are used for internal operations only such as for a variety of tasks, including transforming data, filtering data, composing functions, and more.
+Callbacks are a specific use case of Higher Order functions.
