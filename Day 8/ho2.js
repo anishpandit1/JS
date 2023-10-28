@@ -35,12 +35,23 @@ function filterByDept(emps, dept){
 }
 console.log(filterByDept(employees, "Sales")); */
 //Same Thing Below:
+// function filterByDept(a){
+//     if(a==a.department ? true:false);
+//     console.log(a.department);
+// }
+
+const filterByAge = (e)=>(e.age == 27 ?true:false);
+const filterByDept = (e)=>(e.department == "Sales"?true:false);
+
 function filterBy(emps, fn){
     let results= [];
     for(let i = 0; i<emps.length; i++){
-        if(emps[i].fn==fn){
+        if(fn(emps[i])){
             results.push(emps[i])
         }
     }
     return results;
 }
+console.log(filterBy(employees, filterByAge));
+
+console.log(filterBy(employees, filterByDept));
