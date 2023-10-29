@@ -1,4 +1,4 @@
-Java Script 30 Days Self Training
+#Java Script 30 Days Self Training
 
 Day 1 Introduction
 Day 2 History and Setup
