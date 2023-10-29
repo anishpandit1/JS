@@ -1,16 +1,16 @@
-#Java Script 30 Days Self Training
+### Java Script 30 Days Self Training
 
-Day 1 Introduction
-Day 2 History and Setup
+### Day 1 Introduction
+### Day 2 History and Setup
 
-Day 3	
+### Day 3	
 
 
-i) Ways of Embedding JS code in HTML Document
+**i) Ways of Embedding JS code in HTML Document**
 	Can be placed inside head or body
 	But it is recommended not to put in head as it might take longer to load webpage
 	
-ii) Variables(let, const, var)
+**ii) Variables(let, const, var)**
 	Problems in var:
 	Scope is global, Variable created using var can be accessed from anywhere and can be modified anywhere causing accidental unwanted changes or conflicts. Variables can be accessed before it is declared.
 	let: can be changed in local scope, where it is defined.  Also can be defined globally if needed. 
@@ -20,7 +20,7 @@ ii) Variables(let, const, var)
 		eg . cont pi= 3.14;
 
 
-iii) DataTypes
+**iii) DataTypes**
 	String: can be declared two ways.
 	 eg. let a=”10”;
 		Or
@@ -56,11 +56,11 @@ iii) DataTypes
 		
 
 
-iv) Template Literals
+**iv) Template Literals**
 	eg:
 	let fullName1= `${firstName} ${lastName}`;
 
-	Tagged Template literals:
+**Tagged Template literals:** 
 	make a function, and you take the name of the function that you want to run against the string, and you just put the name right in front of the template.
  eg, let data = Tg`My first name is ${firstName}`;  //Tg = Tagged literals
 
@@ -73,8 +73,8 @@ function Tg(strings, exp){
 
 
 
-Day 4
-Normal vs Asynchronous vs Defer Load
+### Day 4
+**Normal vs Asynchronous vs Defer Load**
 	Normal: 
 HTML Parsing and then fetching, executing and then parsing again in normal.
 <script ="scrip.js"></script>
@@ -84,7 +84,7 @@ HTML parsing then gets to fetching js files and parsing does not stop then start
 	In Defer:
 	Same like async but fetch all the js files first with continuous parsing and execute the js files at the end. If one js file is dependent on another js file, defer is the best method.
 	<script defer="scrip.js"></script>
-Other Operators in JS
+**Other Operators in JS**
 a) Ternary Operator:
 	?:
 //(condition) ? <true> : <false/>
@@ -105,19 +105,19 @@ let newUser= true;
 let data = newUser ?? "New User";
 console.log("data", data);
 
-e) Comparison Operator
-===
-this == checks only values but === checks for value and its datatype as well.
+e) Comparison operator
+=== this == checks only values but === checks for value and its datatype as well.
 let a = "10";
 let b = 10;
 if (a===b){ console.log("same Value");}
 else{console.log("not same value");}
-Day 5
+
+### Day 5
 -Concept of Object
 -CRUD operations in Objects.
 -Exploring inbuilt object of JavaScript
 
-Objects:
+**Objects:**
 JS Objects are special types of variables that can store both keys and values of the variables and can even contain methods too.
 A global interface called Object is available in JS, which enables us to work with objects.
 
@@ -187,7 +187,7 @@ Cannot assign to read only property 'name' of object '#<Object>' 
   ​​​​​at ​​​​​​Day 5/object.js:54:1​
 
 
-BuiltIns:
+**BuiltIns:**
 
 Inbuilt object: console, window, document, location, navigator etc.
 Inbuilt Wrapper Objects: String, Boolean, Number, Math, Date, JSON etc.
@@ -210,36 +210,13 @@ console.log(new Date().getDay());
 console.log(new Date().toISOString());
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Day 6
+### Day 6
 Array
 Concepts of Array
 Inbuilt functions of Array
 Destructuring assignment and spread operators.
 
-Inbuilt Array functions:
+**Inbuilt Array functions:**
 
 push() (s) : to add new element at the end of array
 	studentsList.push("Dick");
@@ -277,7 +254,7 @@ fill().(s): to set or fill the array element with a new one.
 	[ 'Dick', 'Tom', 'changing 2 and 3 index', 'changing 2 and 3 index',  'Comptia' ]
 
 
-Destructuring assignment And Spread Operators(...)
+**Destructuring assignment And Spread Operators(...)**
 ES6 features
 	Mostly used with objects, arrays, and sometimes with function parameters and with  strings.
 Mainly used for assign, shallow copy and merging values between variables.
@@ -339,34 +316,13 @@ We used Object.assign(a, student) to copy student object into a.
 But Spread can be used to do the same.
 I.e : let a ={...student}; 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Day 7
-
+### Day 7
 Concept of Loops
 Concept of Functions + Recursive function in JS
 Destructuring Assignment and Spread Operator in Function Params
 Ways of creating Functions in JS + Function as object.
 
-Loops
+**Loops**
 For loop, while loop, do-while loop, etc.
 
 i) For loop:
@@ -463,7 +419,7 @@ for(let key in student){
 
 
 
-Functions
+**Functions**
 A function is a particular set of statements to perform a certain action.
 The concept of code reusability comes through the use of function.
 
@@ -481,7 +437,8 @@ Another way to declare a function
 let add = new Function("a", "b", "return a+b");
 let x = add(1, 4);
 console.log(x);
-Destructuring assignment and Spread Operator in functions
+
+**Destructuring assignment and Spread Operator in functions**
 function grades(a, b, [c,...rest]){
 	console.log(a,b,c)
 	console.log(rest);
@@ -489,15 +446,15 @@ function grades(a, b, [c,...rest]){
 grades("A", "B", ["C", "D", "E", "F"]);
 
 
-Other ways of creating functions
+**Other ways of creating functions**
 
-Variable assigned function:
+**Variable assigned function:**
 example,
 let addFun = function(c,d){
 	return c+d;
 };
 
-Arrow function:
+**Arrow function:**
  Function created this way is also called an anonymous function because there wont be the name of the function.
 example,
 
@@ -528,7 +485,7 @@ console.log(outer(30)(10))
 const adder = outer(30);
 console.log(adder(10));
 
-IIFE: Immediately Invoked Function Expression
+**IIFE: Immediately Invoked Function Expression**
 No need to call function with function name, just enclose the function while declaration within small bracket and appen (); at the end
 example,
 (function dotDot(){
@@ -537,7 +494,7 @@ example,
 Output: .......
 
 
-Are functions also objects in JS?
+**Are functions also objects in JS?**
 In JS, a function acts like an object i.e they can have properties like object, despite being the function, also they can be created as wrapper objects.
 Below two examples should clarify this:
 example1,
@@ -554,30 +511,19 @@ function Student(firstName){
 let s1 = new Student("Thomas");
 console.log(s1);
 
+### Day 8
 
-
-
-
-
-
-
-
-
-
-
-Day 8
-First Class Function
+**First Class Function**
  Apart from behaving like an object, another weird part with JS functions is that a function can be passed inside another function.
 Programming language that support the three things are known as first class function and they are:
 Passing function as argument of another function
 Returning function from another function
 Assigning function to a variable.
 
-Higher order function
-
+**Higher order function**
 A higher order function is a function that takes one or more functions as arguments or returns a function as its results.
 
-Inbuilt HOFs in JS for Arrays
+**Inbuilt HOFs in JS for Arrays**
 forEach:
 The forEach() method executes a provided function once for each array element and returns undefined.
 map:
@@ -589,12 +535,12 @@ The reduce() method reduces our given array into a single value.
 sort():
 The sort() method sorts the data in the array as per our given condition, and returns the sorted array. If -ve a comes before b, if +ve a comes after b.
 
-Callback functions:
+**Callback functions:**
 A function that is passed as an argument to another function and is executed after the completion of the parent function. Callbacks are commonly used in asynchronous programming to handle tasks like responding to user input, making API requests, or reading files. SUch that, it ensures that the program is not blocked or freezed.
 Callbacks are not only used to just pass value but also can be used in order to get back the value.
 Main usage: Code Isolation, Asynchronous operation handle.
 
 
-HOF vs. Callback
+**HOF vs. Callback**
 Callbacks are intended to be executed at a later time or under certain conditions whereas HOF are used for internal operations only such as for a variety of tasks, including transforming data, filtering data, composing functions, and more.
 Callbacks are a specific use case of Higher Order functions.
