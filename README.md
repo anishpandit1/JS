@@ -598,3 +598,39 @@ Main usage: Code Isolation, Asynchronous operation handle.
 HOF vs. Callback
 Callbacks are intended to be executed at a later time or under certain conditions whereas HOF are used for internal operations only such as for a variety of tasks, including transforming data, filtering data, composing functions, and more.
 Callbacks are a specific use case of Higher Order functions.
+
+
+## Day 9
+**Making Code Reusable**
+JS is also a modular programming language, from loops and functions in one level we are making code reusable in one level already but its not done across the different program files of the application. Most of the javascript based framework make use of this concept.
+ 1) ES6 Modules
+	Supported by JS
+		i)Named Export
+			syntax,
+				export {name1, name2};
+				and 
+				import{name1, name2 as n2};
+
+		ii) Default Export
+			syntax,
+				export default ProdClass;
+				and 
+				import ProdClass
+
+ 2) Common JS
+	Old module system used in Nodejs.
+
+
+Some old browsers does not support script type = "module" so , "no module" is used.
+<script nomodule src="filee.js /></script>
+
+**Console object**
+Built-in global object that provides method for interacting with the browser's console or the console of a Javascript environment(eg. Node.js). Commonly used for debugging, logging and displaying information about the execution of the Javascript code. It is not part of the JS language itself but is typically available in most web browsers and JS envs.
+The various method of console are:
+log(): output message or object to the console.
+erro(): output error message to the console.
+warn(): output warning message...
+info(): output an informational message ...
+table(): display tabular data as a table
+group(), groupEnd(): groups log messages together.
+time(), timeEnd(): Measures the time it takes to execute a block of code.
