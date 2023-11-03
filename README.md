@@ -580,3 +580,16 @@ info(): output an informational message ...
 table(): display tabular data as a table
 group(), groupEnd(): groups log messages together.
 time(), timeEnd(): Measures the time it takes to execute a block of code.
+
+## Day 10
+
+**Dom Basics**
+DOM stands for Document Object Model. It is a tree-structure representation of HTML Documents by the browser engine.
+The main feature of JS is the we access, manipulate, and update DOM data as per the requirements.
+For this document object comes to rescue. The document object is itself a global object but also one of the property of the window object.
+The functions/methods available in the DOM objects helps us to perform various operation with the DOM elements
+
+**Window Object**
+The window object is the global object in a browser's JS environment. It reperesents the browser window or tab and provides access to various properties and methods related to browsing, such as, window size, screen, storage, scrollbar info and more.
+Also, in browser all global scope of JS code are attached in the window object.
+Actually the console and document are object of the window object.
