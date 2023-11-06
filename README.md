@@ -593,3 +593,7 @@ The functions/methods available in the DOM objects helps us to perform various o
 The window object is the global object in a browser's JS environment. It reperesents the browser window or tab and provides access to various properties and methods related to browsing, such as, window size, screen, storage, scrollbar info and more.
 Also, in browser all global scope of JS code are attached in the window object.
 Actually the console and document are object of the window object.
+
+**Document Object**
+The document object is a property of the window object, and it represents the web page's DOM. It allows to access and manipulate the content and structure of the HTML document. You can use the document object to select and modify HTML elements, change their attributes or content, create new elements, remove elements from the page.
+When an HTML document is loaded into a web browser, it becomes a doucment object.
