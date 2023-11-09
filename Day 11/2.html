@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <button onclick="alert('clicked')">Click</button> -->
+    <button id="my-btn">Click Me</button>
+    <button id="my-btn1" onclick="doSomething()">Another Button</button>
+    
+</body>
+<script>
+    document.getElementById("my-btn").ondblclick = function(){
+        alert('Double Clicked');
+    }
+</script>
+<script>
+    function doSomething(){
+        console.log("Doing Something");
+    }
+</script>
+</html>

@@ -597,3 +597,24 @@ Actually the console and document are object of the window object.
 **Document Object**
 The document object is a property of the window object, and it represents the web page's DOM. It allows to access and manipulate the content and structure of the HTML document. You can use the document object to select and modify HTML elements, change their attributes or content, create new elements, remove elements from the page.
 When an HTML document is loaded into a web browser, it becomes a doucment object.
+
+## Day 11
+
+**Concept of Event Handlings**
+Event handling is a fundamental concept in programming, especially in graphical user interface and interactive software development. It refers to the mechanism by which a program responds to and manages various events or actions trigerred by the user, the system, or the external sources. These events can include user input, sys notifications, hardware interactions and more.
+Some terms related to event handlings are:
+Event, Event source, Event handlers or listeners, event loops, event queue, event propagation and so on.
+
+Different Events:
+	Mouse Events
+		Click, double click, mousedown, mouseup, mouseenter, mouseleave, mouseover etc.
+	Keyboard Events
+	Window Events
+
+There are three ways of adding Events to the DOM:
+	1. Using HTML attribute(starts with on)
+		$$
+		<button onclick="alert('clicked')">Click</button>
+		$$
+	2. From attribute-property
+	3. addEventListener()
