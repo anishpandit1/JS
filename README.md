@@ -612,12 +612,13 @@ Different Events:
 	Window Events
 
 There are three ways of adding Events to the DOM:
-	1. Using HTML attribute(starts with on)
-		<button onclick="alert('clicked')">Click</button>
-	2. From attribute-property
-		 <button id="my-btn">Click Me</button>
-		 <script>
-   		 document.getElementById("my-btn").ondblclick = function(){
-        	alert('Double Clicked');
-   		 }
-	3. addEventListener()
+1. Using HTML attribute(starts with on)
+	<button onclick="alert('clicked')">Click</button>
+2. From attribute-property
+	<button id="my-btn">Click Me</button>
+	<script>document.getElementById("my-btn").ondblclick = function()
+	{
+		alert('Double Clicked');
+	}
+	</script>
+3. addEventListener()
