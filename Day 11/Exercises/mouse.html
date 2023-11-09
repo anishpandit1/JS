@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="my-div" onmouseover="" onmouseenter=""></div>
+    
+</body>
+
+    <script>
+        const div = document.getElementById("my-div");
+        div.style.height = "100px";
+        div.style.width = "400px";
+        div.style.backgroundColor = "Green";
+        div.style.color = "White";
+        div.style.fontFamily = "Comic Sans"
+        div.style.fontSize = "25px";
+        
+
+        div.innerHTML = "<b>Hover Here</b>"
+        
+        div.addEventListener("mouseover", function(){
+            div.innerHTML = "<b>Mouse Over</b>"
+        });
+
+        div.addEventListener("mouseenter", function(){
+            div.innerHTML = "<b>Mouse Enter Event</b>"
+        });
+
+        div.addEventListener("mouseleave", function(){
+            div.innerHTML = "<b>Mouse Left</b>"
+        });
+    </script>
+
+</html>

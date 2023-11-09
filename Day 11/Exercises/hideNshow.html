@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id ="img" src="https://i0.wp.com/www.jeremysmola.com/wp-content/uploads/2019/04/cropped-logo-javascript-logo-png-transparent-1.png?ssl=1">
+    <style>
+        #img{
+            width: 500px;
+            height: 500px;
+            visibility: visible;
+        }
+    </style>
+    <button id="my-btn">Show/Hide</button>
+</body>
+<script>
+    const btn = document.getElementById("my-btn");
+    const image = document.getElementById("img");
+    btn.addEventListener("click", showHide);
+    function showHide(){
+        if(image.style.visibility=="hidden"){
+            image.style.visibility="visible";
+            btn.innerText="Hide"
+        }
+        else{
+            image.style.visibility="hidden";
+            btn.innerText="Show"
+        }
+        
+    };
+    
+</script>
+</html>

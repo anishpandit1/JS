@@ -612,6 +612,7 @@ Different Events:
 	Window Events
 
 There are three ways of adding Events to the DOM:
+
 1. Using HTML attribute(starts with on)
 	<button onclick="alert('clicked')">Click</button>
 2. From attribute-property
@@ -622,3 +623,4 @@ There are three ways of adding Events to the DOM:
 	}
 	</script>
 3. addEventListener()
+	btn.addEventListener("click", functionName, bool);

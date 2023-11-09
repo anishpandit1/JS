@@ -11,14 +11,20 @@
     <button id="my-btn1" onclick="doSomething()">Another Button</button>
     
 </body>
-<script>
+<!-- <script>
     document.getElementById("my-btn").ondblclick = function(){
         alert('Double Clicked');
     }
-</script>
-<script>
+</script> -->
+<!-- <script>
     function doSomething(){
         console.log("Doing Something");
     }
+</script> -->
+<script>
+    const btn = document.getElementById("my-btn");
+    btn.addEventListener("click",function(){    //Event handler function/callback funtion
+        console.log("clicked");
+    });
 </script>
 </html>

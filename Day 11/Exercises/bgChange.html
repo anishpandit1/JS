@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+        <button id="my-btn" onclick="changeBg()">Click Here to Chanage the background</button>
+    </body>
+    <script>
+        const colorList = ["red", "green", "blue", "yellow"];
+        const btn = document.getElementById("my-btn");
+
+        function changeBg(){
+          let rand = Math.floor(Math.random() * colorList.length);
+            // console.log(colorList[rand]);
+            document.body.bgColor= colorList[rand];
+
+        }
+    </script>
+</html>
