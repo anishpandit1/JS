@@ -1,0 +1,26 @@
+#row {
+    padding: 50px;
+}
+
+input{
+    width: 150px;
+    height: 150px;
+}
+
+button{
+    width: 130px;
+    height: 130px;
+}
+
+#myList li{
+    list-style-type: none;
+    border: 1px solid #ccc;
+    padding: 50 px;
+    margin-top: 20px;
+}
+
+.close{
+    float: right;
+    color: red;
+    cursor: pointer;
+}
