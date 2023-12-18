@@ -624,3 +624,14 @@ There are three ways of adding Events to the DOM:
 	</script>
 3. addEventListener()
 	btn.addEventListener("click", functionName, bool);
+
+## Day 12
+
+**Event Objects**
+Just like accessing webpage DOM, we have document object(of window object), for handling all the events in Javascript, we do have event objects.
+For working with mouse events, we have PointerEvents object. For other events we have other objects as well.
+
+**Event Flow**
+Evet propagation refers to the process by which events, such as user interaction with a GUI or actions in a software program are passed along to be handled by various parts of a program or system, Event flow methods determine how these events are routed and processed within the software.
+There are two types: Event Bubbling(default) and Event Capturing(if passed in fun param(3rd param), "capture: true")
+e.stopPropagation(); can be used to if unwanted to capture higher events.

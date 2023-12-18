@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="my-btn">Click Here</button>
+</body>
+<script>
+    // const btn = document.getElementById("my-btn");
+    // btn.addEventListener("click", function(e){
+    //     console.log(this);
+    //     console.log(e);
+    // });
+    document.addEventListener("click", (e)=>{
+        console.log(`${e.screenX} ${e.screenY}`);
+        console.log(`${e.clientX} ${e.clientY}`);
+    });
+</script>
+</html>
